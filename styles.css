@@ -5,7 +5,7 @@
     --accent-color: #ff4500;
     --font-family: 'Montserrat', sans-serif;
     --transition-speed: 0.3s;
-    --background-hero: url('images/hero-background.jpg') center/cover no-repeat;
+    --background-hero: url('images/hero-background.png') center/cover no-repeat;
     --header-height: 80px;
     --footer-bg-color: #333333;
     --menu-bg-color: #1a1a1a;
@@ -70,7 +70,7 @@ body {
 }
 
 .logo img {
-    width: 150px;
+    width: 75px;
 }
 
 .nav ul {
@@ -134,16 +134,13 @@ body {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.social a {
-    margin-left: 15px;
-}
-
 .social img {
+    margin-left: 15px;
     width: 24px;
     transition: transform var(--transition-speed);
 }
 
-.social a:hover img {
+.social img:hover {
     transform: scale(1.2);
 }
 
@@ -276,6 +273,7 @@ body {
 .about-image {
     width: 100%;
     max-width: 300px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     opacity: 0;
@@ -496,16 +494,13 @@ body {
     width: 120px;
 }
 
-.footer-social a {
-    margin-left: 15px;
-}
-
 .footer-social img {
+    margin-left: 15px;
     width: 24px;
     transition: transform var(--transition-speed);
 }
 
-.footer-social a:hover img {
+.footer-social img:hover {
     transform: scale(1.2);
 }
 

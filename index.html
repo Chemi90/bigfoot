@@ -22,10 +22,16 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
-    <link rel="stylesheet" href="styles.css">
+    <!-- Preconexión a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Google Fonts -->
+    <!-- Importación de Google Fonts con font-display: swap -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload de Imágenes Críticas -->
+    <link rel="preload" as="image" href="images/hero-background.png" type="image/png">
+    <link rel="preload" as="image" href="images/Bigfoot_TDM_logo.png" type="image/png">
     
     <!-- Datos Estructurados JSON-LD para SEO Local -->
     <script type="application/ld+json">
@@ -33,7 +39,7 @@
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "name": "Bigfoot TDM",
-      "image": "https://tu-dominio.com/images/hero-background.jpg",
+      "image": "https://tu-dominio.com/images/hero-background.png",
       "@id": "",
       "url": "https://tu-dominio.com",
       "telephone": "640798385",
@@ -78,15 +84,16 @@
       ]
     }
     </script>
+    
+    <!-- Link a CSS Minificado -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header class="header" role="banner">
         <div class="container">
             <div class="logo">
-                <a href="#" aria-label="Inicio">
-                    <img src="https://images.squarespace-cdn.com/content/v1/6602e8f62ee6c963d803db68/bd57488d-9a59-4945-b302-6a4298bc0090/Bigfoot_Blue_BG-removebg-2.png?format=1500w" alt="Bigfoot TDM Logo">
-                </a>
+                <img src="images/Bigfoot_TDM_logo.png" alt="Bigfoot TDM Logo" width="75px" height="75px">
             </div>
             <nav class="nav" role="navigation" aria-label="Principal">
                 <ul>
@@ -102,12 +109,8 @@
                 <span class="bar"></span>
             </button>
             <div class="social">
-                <a href="https://www.instagram.com/bigfoot_tdm" target="_blank" aria-label="Instagram">
-                    <img src="images/instagram-icon.png" alt="Ícono de Instagram">
-                </a>
-                <a href="https://www.tiktok.com/@bigfoot_tdm" target="_blank" aria-label="TikTok">
-                    <img src="images/tiktok-icon.png" alt="Ícono de TikTok">
-                </a>
+                <img src="images/instagram-icon.png" alt="Ícono de Instagram" loading="lazy" width="24" height="24">
+                <img src="images/tiktok-icon.png" alt="Ícono de TikTok" loading="lazy" width="24" height="24">
             </div>
         </div>
     </header>
@@ -134,8 +137,8 @@
                         <p><strong>Desata la bestia que llevas dentro</strong></p>
                     </div>
                     <div class="about-images">
-                        <img src="https://images.squarespace-cdn.com/content/v1/6602e8f62ee6c963d803db68/20c8ce33-714c-474f-9e61-87f2065c347f/spanish+edgy.jpg" alt="Ubicación en España" class="about-image">
-                        <img src="https://images.squarespace-cdn.com/content/v1/6602e8f62ee6c963d803db68/f6cce9ab-479c-4b36-97ca-38cf68b361f1/canadian+edgy.jpg" alt="Raíces Canadienses" class="about-image">
+                        <img src="images/spanish-edgy.png" alt="Ubicación en España" class="about-image" loading="lazy" width="300" height="200">
+                        <img src="images/canadian-edgy.png" alt="Raíces Canadienses" class="about-image" loading="lazy" width="300" height="200">
                     </div>
                 </div>
             </div>
@@ -151,7 +154,7 @@
                     <h3>DETROIT PIZZA</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/sasquatch.jpg" alt="Sasquatch Pizza">
+                            <img src="images/sasquatch.png" alt="Sasquatch Pizza" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Sasquatch</h4>
                                 <p class="price">15€/19€</p>
@@ -159,7 +162,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/sausage-supreme.jpg" alt="Sausage Supreme Pizza">
+                            <img src="images/sausage-supreme.png" alt="Sausage Supreme Pizza" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Sausage Supreme</h4>
                                 <p class="price">16€/20€</p>
@@ -167,7 +170,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/meat-feast.jpg" alt="Meat Feast Pizza">
+                            <img src="images/meat-feast.png" alt="Meat Feast Pizza" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Meat Feast</h4>
                                 <p class="price">17.50€/22€</p>
@@ -175,7 +178,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/veggie.jpg" alt="Veggie Pizza">
+                            <img src="images/veggie.png" alt="Veggie Pizza" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Veggie</h4>
                                 <p class="price">15€/19€</p>
@@ -190,7 +193,7 @@
                     <h3>PIZZAS</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/bigfoot-nonno.jpg" alt="Bigfoot Nonno Pizza">
+                            <img src="images/bigfoot-nonno.png" alt="Bigfoot Nonno Pizza" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Bigfoot Nonno</h4>
                                 <p class="price">12€</p>
@@ -198,7 +201,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/margherita.jpg" alt="Margherita Pizza">
+                            <img src="images/margherita.png" alt="Margherita Pizza" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Margherita</h4>
                                 <p class="price">10€</p>
@@ -213,7 +216,7 @@
                     <h3>FRIES</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/poutine.jpg" alt="Poutine">
+                            <img src="images/poutine.png" alt="Poutine" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Poutine</h4>
                                 <p class="price">7€</p>
@@ -221,7 +224,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/bravas.jpg" alt="Bravas">
+                            <img src="images/bravas.png" alt="Bravas" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Bravas</h4>
                                 <p class="price">6€</p>
@@ -229,7 +232,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/house-fries.jpg" alt="House Fries">
+                            <img src="images/house-fries.png" alt="House Fries" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>House Fries</h4>
                                 <p class="price">5€</p>
@@ -237,7 +240,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/bigfoot-fries.jpg" alt="Bigfoot Fries">
+                            <img src="images/bigfoot-fries.png" alt="Bigfoot Fries" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Bigfoot Fries</h4>
                                 <p class="price">7.50€</p>
@@ -252,7 +255,7 @@
                     <h3>FOCACCIA SANDWICH</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/bigfoot-classica.jpg" alt="Bigfoot Classica Sandwich">
+                            <img src="images/bigfoot-classica.png" alt="Bigfoot Classica Sandwich" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Bigfoot Classica</h4>
                                 <p class="price">Precio no especificado</p>
@@ -260,7 +263,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/veggie-sandwich.jpg" alt="Veggie Sandwich">
+                            <img src="images/veggie-sandwich.png" alt="Veggie Sandwich" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Veggie</h4>
                                 <p class="price">Precio no especificado</p>
@@ -268,7 +271,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/dulce-temptation.jpg" alt="Dulce Temptation Sandwich">
+                            <img src="images/dulce-temptation.png" alt="Dulce Temptation Sandwich" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Dulce Temptation</h4>
                                 <p class="price">Precio no especificado</p>
@@ -283,7 +286,7 @@
                     <h3>SQUASH BURGERS (90 gramos de ternera)</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/bigfoot-burger.jpg" alt="Bigfoot Burger">
+                            <img src="images/bigfoot-burger.png" alt="Bigfoot Burger" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Bigfoot</h4>
                                 <p class="price">10.50€</p>
@@ -291,7 +294,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/bigfoot-double.jpg" alt="Bigfoot Double Burger">
+                            <img src="images/bigfoot-double.png" alt="Bigfoot Double Burger" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Bigfoot Double</h4>
                                 <p class="price">12.50€</p>
@@ -299,7 +302,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/bigfoot-triple.jpg" alt="Bigfoot Triple Burger">
+                            <img src="images/bigfoot-triple.png" alt="Bigfoot Triple Burger" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Bigfoot Triple</h4>
                                 <p class="price">14.50€</p>
@@ -307,7 +310,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/extra-ternera.jpg" alt="Extra Ternera">
+                            <img src="images/extra-ternera.png" alt="Extra Ternera" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Extra Ternera</h4>
                                 <p class="price">2.50€</p>
@@ -315,7 +318,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/oklahoma-style.jpg" alt="Oklahoma Style">
+                            <img src="images/oklahoma-style.png" alt="Oklahoma Style" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Oklahoma Style</h4>
                                 <p class="price">0.50€</p>
@@ -330,7 +333,7 @@
                     <h3>CLASSIC BURGERS (130 gramos de ternera)</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/canada-burger.jpg" alt="Canada Burger">
+                            <img src="images/canada-burger.png" alt="Canada Burger" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Canada</h4>
                                 <p class="price">13.50€</p>
@@ -338,7 +341,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/usa-burger.jpg" alt="USA Burger">
+                            <img src="images/usa-burger.png" alt="USA Burger" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>USA</h4>
                                 <p class="price">13.50€</p>
@@ -346,7 +349,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/mexico-burger.jpg" alt="Mexico Burger">
+                            <img src="images/mexico-burger.png" alt="Mexico Burger" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Mexico</h4>
                                 <p class="price">13.50€</p>
@@ -361,7 +364,7 @@
                     <h3>TACOS</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/pastor-tacos.jpg" alt="Pastor Tacos">
+                            <img src="images/pastor-tacos.png" alt="Pastor Tacos" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Pastor</h4>
                                 <p class="price">3.50€</p>
@@ -369,7 +372,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/carnitas-tacos.jpg" alt="Carnitas Tacos">
+                            <img src="images/carnitas-tacos.png" alt="Carnitas Tacos" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Carnitas</h4>
                                 <p class="price">3.50€</p>
@@ -377,7 +380,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/birria-tacos.jpg" alt="Birria Tacos">
+                            <img src="images/birria-tacos.png" alt="Birria Tacos" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Birria</h4>
                                 <p class="price">4€</p>
@@ -385,7 +388,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/tostada-tacos.jpg" alt="Tostada Tacos">
+                            <img src="images/tostada-tacos.png" alt="Tostada Tacos" loading="lazy" width="300" height="200">
                             <div class="menu-item-info">
                                 <h4>Tostada</h4>
                                 <p class="price">4€</p>
@@ -423,22 +426,16 @@
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-logo">
-                <a href="#" aria-label="Inicio">
-                    <img src="https://images.squarespace-cdn.com/content/v1/6602e8f62ee6c963d803db68/949e326f-4c58-4883-8aad-acf0deab1f03/BF+logo.png" alt="Bigfoot TDM Logo">
-                </a>
+                <img src="images/BF_logo.png" alt="Bigfoot TDM Logo" loading="lazy" width="120" height="60">
             </div>
             <div class="footer-social">
-                <a href="https://www.instagram.com/bigfoot_tdm" target="_blank" aria-label="Instagram">
-                    <img src="images/instagram-icon.png" alt="Ícono de Instagram">
-                </a>
-                <a href="https://www.tiktok.com/@bigfoot_tdm" target="_blank" aria-label="TikTok">
-                    <img src="images/tiktok-icon.png" alt="Ícono de TikTok">
-                </a>
+                <img src="images/instagram-icon.png" alt="Ícono de Instagram" loading="lazy" width="24" height="24">
+                <img src="images/tiktok-icon.png" alt="Ícono de TikTok" loading="lazy" width="24" height="24">
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript Minificado -->
     <script src="script.js"></script>
 </body>
 </html>
