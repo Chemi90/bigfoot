@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bigfoot TDM - Restaurante en Torre del Mar</title>
+    <title data-lang-key="title">Bigfoot TDM - Restaurante en Torre del Mar</title>
     
     <!-- Meta Descripción y Palabras Clave para SEO -->
     <meta name="description" content="Bigfoot TDM es un restaurante canadiense en el sur de España, ofreciendo clásicos norteamericanos con un giro. Disfruta de nuestras deliciosas pizzas, hamburguesas, tacos y más en Torre del Mar.">
@@ -93,14 +93,14 @@
     <header class="header" role="banner">
         <div class="container">
             <div class="logo">
-                <img src="images/Bigfoot_TDM_logo.png" alt="Bigfoot TDM Logo" width="75px" height="75px">
+                <img src="images/Bigfoot_TDM_logo.png" alt="Bigfoot TDM Logo" loading="lazy">
             </div>
             <nav class="nav" role="navigation" aria-label="Principal">
                 <ul>
-                    <li><a href="#about">Sobre Nosotros</a></li>
-                    <li><a href="#menu">Menú</a></li>
-                    <li><a href="#hours">Horarios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#about" data-lang-key="nav_about">Sobre Nosotros</a></li>
+                    <li><a href="#menu" data-lang-key="nav_menu">Menú</a></li>
+                    <li><a href="#hours" data-lang-key="nav_hours">Horarios</a></li>
+                    <li><a href="#contact" data-lang-key="nav_contact">Contacto</a></li>
                 </ul>
             </nav>
             <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú">
@@ -109,8 +109,17 @@
                 <span class="bar"></span>
             </button>
             <div class="social">
-                <img src="images/instagram-icon.png" alt="Ícono de Instagram" loading="lazy" width="24" height="24">
-                <img src="images/tiktok-icon.png" alt="Ícono de TikTok" loading="lazy" width="24" height="24">
+                <img src="images/instagram-icon.png" alt="Ícono de Instagram" loading="lazy">
+                <img src="images/tiktok-icon.png" alt="Ícono de TikTok" loading="lazy">
+            </div>
+            <!-- Selector de Idioma -->
+            <div class="language-selector">
+                <select id="language-select" aria-label="Seleccionar idioma">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                </select>
             </div>
         </div>
     </header>
@@ -119,26 +128,26 @@
     <main>
         <section class="hero" id="hero">
             <div class="hero-content">
-                <h1>Mischief in the Barrio</h1>
-                <p><em>NUEVO MONSTRUO EN LA CIUDAD</em></p>
-                <a href="#menu" class="btn">Ver Menú</a>
+                <h1 data-lang-key="hero_title">Mischief in the Barrio</h1>
+                <p data-lang-key="hero_subtitle"><em>NUEVO MONSTRUO EN LA CIUDAD</em></p>
+                <a href="#menu" class="btn" data-lang-key="hero_button">Ver Menú</a>
             </div>
         </section>
 
         <!-- Sobre Nosotros -->
         <section class="about-us" id="about">
             <div class="container">
-                <h2>Sobre Nosotros</h2>
+                <h2 data-lang-key="about_us_heading">Sobre Nosotros</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Las leyendas dicen que en lo profundo de los bosques montañosos del noroeste del Pacífico vive un hombre simio de 8 pies de altura que recorre las tierras en secreto, dejando huellas gigantes y preguntas aún más grandes… ¿Es real? ..¿De dónde viene?</p>
-                        <p>Este folclore ha viajado alrededor del mundo. Para algunos es <em>Sasquatch</em>, para otros <em>El Yeti</em> o <em>Sisimite</em>, pero para nosotros es <strong>Bigfoot</strong>, y puedes encontrarlo ahora mismo en Torre del Mar, España.</p>
-                        <p>Ven y experimenta el misterio y la travesura de Bigfoot Café. Somos un par de canadienses que queremos ofrecerte clásicos norteamericanos con un giro. Tenemos cervezas frías, buena música y comida abundante ♥️.</p>
-                        <p><strong>Desata la bestia que llevas dentro</strong></p>
+                        <p data-lang-key="about_us_paragraph1">Las leyendas dicen que en lo profundo de los bosques montañosos del noroeste del Pacífico vive un hombre simio de 8 pies de altura que recorre las tierras en secreto, dejando huellas gigantes y preguntas aún más grandes… ¿Es real? ..¿De dónde viene?</p>
+                        <p data-lang-key="about_us_paragraph2">Este folclore ha viajado alrededor del mundo. Para algunos es <em>Sasquatch</em>, para otros <em>El Yeti</em> o <em>Sisimite</em>, pero para nosotros es <strong>Bigfoot</strong>, y puedes encontrarlo ahora mismo en Torre del Mar, España.</p>
+                        <p data-lang-key="about_us_paragraph3">Ven y experimenta el misterio y la travesura de Bigfoot Café. Somos un par de canadienses que queremos ofrecerte clásicos norteamericanos con un giro. Tenemos cervezas frías, buena música y comida abundante ♥️.</p>
+                        <p data-lang-key="about_us_paragraph4"><strong>Desata la bestia que llevas dentro</strong></p>
                     </div>
                     <div class="about-images">
-                        <img src="images/spanish-edgy.png" alt="Ubicación en España" class="about-image" loading="lazy" width="300" height="200">
-                        <img src="images/canadian-edgy.png" alt="Raíces Canadienses" class="about-image" loading="lazy" width="300" height="200">
+                        <img src="images/spanish-edgy.png" alt="Ubicación en España" class="about-image" loading="lazy">
+                        <img src="images/canadian-edgy.png" alt="Raíces Canadienses" class="about-image" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -147,42 +156,42 @@
         <!-- Menú -->
         <section class="menu" id="menu">
             <div class="container">
-                <h2>Nuestra Carta</h2>
+                <h2 data-lang-key="menu_heading">Nuestra Carta</h2>
                 
                 <!-- DETROIT PIZZA -->
                 <div class="menu-category">
-                    <h3>DETROIT PIZZA</h3>
+                    <h3 data-lang-key="menu_detroit_pizza">DETROIT PIZZA</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/sasquatch.png" alt="Sasquatch Pizza" loading="lazy" width="300" height="200">
+                            <img src="images/sasquatch.png" alt="Sasquatch Pizza" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Sasquatch</h4>
-                                <p class="price">15€/19€</p>
-                                <p class="ingredients">Ingredientes: Pepperoni, queso mozzarella, salsa de tomate.</p>
+                                <h4 data-lang-key="menu_sasquatch">Sasquatch</h4>
+                                <p class="price" data-lang-key="price_sasquatch">15€/19€</p>
+                                <p class="ingredients" data-lang-key="ingredients_sasquatch">Ingredientes: Pepperoni, queso mozzarella, salsa de tomate.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/sausage-supreme.png" alt="Sausage Supreme Pizza" loading="lazy" width="300" height="200">
+                            <img src="images/sausage-supreme.png" alt="Sausage Supreme Pizza" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Sausage Supreme</h4>
-                                <p class="price">16€/20€</p>
-                                <p class="ingredients">Ingredientes: Salchicha, pimientos, cebolla, queso mozzarella.</p>
+                                <h4 data-lang-key="menu_sausage_supreme">Sausage Supreme</h4>
+                                <p class="price" data-lang-key="price_sausage_supreme">16€/20€</p>
+                                <p class="ingredients" data-lang-key="ingredients_sausage_supreme">Ingredientes: Salchicha, pimientos, cebolla, queso mozzarella.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/meat-feast.png" alt="Meat Feast Pizza" loading="lazy" width="300" height="200">
+                            <img src="images/meat-feast.png" alt="Meat Feast Pizza" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Meat Feast</h4>
-                                <p class="price">17.50€/22€</p>
-                                <p class="ingredients">Ingredientes: Carne de res, salchicha, bacon, queso mozzarella.</p>
+                                <h4 data-lang-key="menu_meat_feast">Meat Feast</h4>
+                                <p class="price" data-lang-key="price_meat_feast">17.50€/22€</p>
+                                <p class="ingredients" data-lang-key="ingredients_meat_feast">Ingredientes: Carne de res, salchicha, bacon, queso mozzarella.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/veggie.png" alt="Veggie Pizza" loading="lazy" width="300" height="200">
+                            <img src="images/veggie.png" alt="Veggie Pizza" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Veggie</h4>
-                                <p class="price">15€/19€</p>
-                                <p class="ingredients">Ingredientes: Champiñones, pimientos, cebolla, aceitunas, queso mozzarella.</p>
+                                <h4 data-lang-key="menu_veggie">Veggie</h4>
+                                <p class="price" data-lang-key="price_veggie">15€/19€</p>
+                                <p class="ingredients" data-lang-key="ingredients_veggie">Ingredientes: Champiñones, pimientos, cebolla, aceitunas, queso mozzarella.</p>
                             </div>
                         </div>
                     </div>
@@ -190,22 +199,22 @@
 
                 <!-- PIZZAS -->
                 <div class="menu-category">
-                    <h3>PIZZAS</h3>
+                    <h3 data-lang-key="menu_pizzas">PIZZAS</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/bigfoot-nonno.png" alt="Bigfoot Nonno Pizza" loading="lazy" width="300" height="200">
+                            <img src="images/bigfoot-nonno.png" alt="Bigfoot Nonno Pizza" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Bigfoot Nonno</h4>
-                                <p class="price">12€</p>
-                                <p class="ingredients">Ingredientes: Tomate, mozzarella, albahaca fresca.</p>
+                                <h4 data-lang-key="menu_bigfoot_nonno">Bigfoot Nonno</h4>
+                                <p class="price" data-lang-key="price_bigfoot_nonno">12€</p>
+                                <p class="ingredients" data-lang-key="ingredients_bigfoot_nonno">Ingredientes: Tomate, mozzarella, albahaca fresca.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/margherita.png" alt="Margherita Pizza" loading="lazy" width="300" height="200">
+                            <img src="images/margherita.png" alt="Margherita Pizza" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Margherita</h4>
-                                <p class="price">10€</p>
-                                <p class="ingredients">Ingredientes: Tomate, mozzarella, orégano.</p>
+                                <h4 data-lang-key="menu_margherita">Margherita</h4>
+                                <p class="price" data-lang-key="price_margherita">10€</p>
+                                <p class="ingredients" data-lang-key="ingredients_margherita">Ingredientes: Tomate, mozzarella, orégano.</p>
                             </div>
                         </div>
                     </div>
@@ -213,38 +222,38 @@
 
                 <!-- FRIES -->
                 <div class="menu-category">
-                    <h3>FRIES</h3>
+                    <h3 data-lang-key="menu_fries">FRIES</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/poutine.png" alt="Poutine" loading="lazy" width="300" height="200">
+                            <img src="images/poutine.png" alt="Poutine" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Poutine</h4>
-                                <p class="price">7€</p>
-                                <p class="ingredients">Papas fritas, queso, salsa gravy.</p>
+                                <h4 data-lang-key="menu_poutine">Poutine</h4>
+                                <p class="price" data-lang-key="price_poutine">7€</p>
+                                <p class="ingredients" data-lang-key="ingredients_poutine">Papas fritas, queso, salsa gravy.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/bravas.png" alt="Bravas" loading="lazy" width="300" height="200">
+                            <img src="images/bravas.png" alt="Bravas" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Bravas</h4>
-                                <p class="price">6€</p>
-                                <p class="ingredients">Papas fritas con salsa picante.</p>
+                                <h4 data-lang-key="menu_bravas">Bravas</h4>
+                                <p class="price" data-lang-key="price_bravas">6€</p>
+                                <p class="ingredients" data-lang-key="ingredients_bravas">Papas fritas con salsa picante.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/house-fries.png" alt="House Fries" loading="lazy" width="300" height="200">
+                            <img src="images/house-fries.png" alt="House Fries" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>House Fries</h4>
-                                <p class="price">5€</p>
-                                <p class="ingredients">Papas fritas caseras con sal y especias.</p>
+                                <h4 data-lang-key="menu_house_fries">House Fries</h4>
+                                <p class="price" data-lang-key="price_house_fries">5€</p>
+                                <p class="ingredients" data-lang-key="ingredients_house_fries">Papas fritas caseras con sal y especias.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/bigfoot-fries.png" alt="Bigfoot Fries" loading="lazy" width="300" height="200">
+                            <img src="images/bigfoot-fries.png" alt="Bigfoot Fries" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Bigfoot Fries</h4>
-                                <p class="price">7.50€</p>
-                                <p class="ingredients">Papas fritas con queso y salsa especial.</p>
+                                <h4 data-lang-key="menu_bigfoot_fries">Bigfoot Fries</h4>
+                                <p class="price" data-lang-key="price_bigfoot_fries">7.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_bigfoot_fries">Papas fritas con queso y salsa especial.</p>
                             </div>
                         </div>
                     </div>
@@ -252,30 +261,30 @@
 
                 <!-- FOCACCIA SANDWICH -->
                 <div class="menu-category">
-                    <h3>FOCACCIA SANDWICH</h3>
+                    <h3 data-lang-key="menu_focaccia_sandwich">FOCACCIA SANDWICH</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/bigfoot-classica.png" alt="Bigfoot Classica Sandwich" loading="lazy" width="300" height="200">
+                            <img src="images/bigfoot-classica.png" alt="Bigfoot Classica Sandwich" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Bigfoot Classica</h4>
-                                <p class="price">Precio no especificado</p>
-                                <p class="ingredients">Ingredientes: Jamón, queso, lechuga, tomate.</p>
+                                <h4 data-lang-key="menu_bigfoot_classica">Bigfoot Classica</h4>
+                                <p class="price" data-lang-key="price_bigfoot_classica">Precio no especificado</p>
+                                <p class="ingredients" data-lang-key="ingredients_bigfoot_classica">Ingredientes: Jamón, queso, lechuga, tomate.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/veggie-sandwich.png" alt="Veggie Sandwich" loading="lazy" width="300" height="200">
+                            <img src="images/veggie-sandwich.png" alt="Veggie Sandwich" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Veggie</h4>
-                                <p class="price">Precio no especificado</p>
-                                <p class="ingredients">Ingredientes: Vegetales frescos, hummus, espinacas.</p>
+                                <h4 data-lang-key="menu_veggie_sandwich">Veggie</h4>
+                                <p class="price" data-lang-key="price_veggie_sandwich">Precio no especificado</p>
+                                <p class="ingredients" data-lang-key="ingredients_veggie_sandwich">Ingredientes: Vegetales frescos, hummus, espinacas.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/dulce-temptation.png" alt="Dulce Temptation Sandwich" loading="lazy" width="300" height="200">
+                            <img src="images/dulce-temptation.png" alt="Dulce Temptation Sandwich" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Dulce Temptation</h4>
-                                <p class="price">Precio no especificado</p>
-                                <p class="ingredients">Ingredientes: Queso crema, frutas, miel.</p>
+                                <h4 data-lang-key="menu_dulce_temptation">Dulce Temptation</h4>
+                                <p class="price" data-lang-key="price_dulce_temptation">Precio no especificado</p>
+                                <p class="ingredients" data-lang-key="ingredients_dulce_temptation">Ingredientes: Queso crema, frutas, miel.</p>
                             </div>
                         </div>
                     </div>
@@ -283,46 +292,46 @@
 
                 <!-- SQUASH BURGERS (90 gramos de ternera) -->
                 <div class="menu-category">
-                    <h3>SQUASH BURGERS (90 gramos de ternera)</h3>
+                    <h3 data-lang-key="menu_squash_burgers">SQUASH BURGERS (90 gramos de ternera)</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/bigfoot-burger.png" alt="Bigfoot Burger" loading="lazy" width="300" height="200">
+                            <img src="images/bigfoot-burger.png" alt="Bigfoot Burger" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Bigfoot</h4>
-                                <p class="price">10.50€</p>
-                                <p class="ingredients">Ingredientes: Hamburguesa de ternera, lechuga, tomate, cebolla.</p>
+                                <h4 data-lang-key="menu_bigfoot_burger">Bigfoot</h4>
+                                <p class="price" data-lang-key="price_bigfoot_burger">10.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_bigfoot_burger">Ingredientes: Hamburguesa de ternera, lechuga, tomate, cebolla.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/bigfoot-double.png" alt="Bigfoot Double Burger" loading="lazy" width="300" height="200">
+                            <img src="images/bigfoot-double.png" alt="Bigfoot Double Burger" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Bigfoot Double</h4>
-                                <p class="price">12.50€</p>
-                                <p class="ingredients">Ingredientes: Doble hamburguesa de ternera, queso, lechuga, tomate.</p>
+                                <h4 data-lang-key="menu_bigfoot_double">Bigfoot Double</h4>
+                                <p class="price" data-lang-key="price_bigfoot_double">12.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_bigfoot_double">Ingredientes: Doble hamburguesa de ternera, queso, lechuga, tomate.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/bigfoot-triple.png" alt="Bigfoot Triple Burger" loading="lazy" width="300" height="200">
+                            <img src="images/bigfoot-triple.png" alt="Bigfoot Triple Burger" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Bigfoot Triple</h4>
-                                <p class="price">14.50€</p>
-                                <p class="ingredients">Ingredientes: Triple hamburguesa de ternera, queso, bacon, lechuga, tomate.</p>
+                                <h4 data-lang-key="menu_bigfoot_triple">Bigfoot Triple</h4>
+                                <p class="price" data-lang-key="price_bigfoot_triple">14.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_bigfoot_triple">Ingredientes: Triple hamburguesa de ternera, queso, bacon, lechuga, tomate.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/extra-ternera.png" alt="Extra Ternera" loading="lazy" width="300" height="200">
+                            <img src="images/extra-ternera.png" alt="Extra Ternera" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Extra Ternera</h4>
-                                <p class="price">2.50€</p>
-                                <p class="ingredients">Hamburguesa de ternera adicional.</p>
+                                <h4 data-lang-key="menu_extra_ternera">Extra Ternera</h4>
+                                <p class="price" data-lang-key="price_extra_ternera">2.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_extra_ternera">Hamburguesa de ternera adicional.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/oklahoma-style.png" alt="Oklahoma Style" loading="lazy" width="300" height="200">
+                            <img src="images/oklahoma-style.png" alt="Oklahoma Style" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Oklahoma Style</h4>
-                                <p class="price">0.50€</p>
-                                <p class="ingredients">Ingredientes adicionales al estilo Oklahoma.</p>
+                                <h4 data-lang-key="menu_oklahoma_style">Oklahoma Style</h4>
+                                <p class="price" data-lang-key="price_oklahoma_style">0.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_oklahoma_style">Ingredientes adicionales al estilo Oklahoma.</p>
                             </div>
                         </div>
                     </div>
@@ -330,30 +339,30 @@
 
                 <!-- CLASSIC BURGERS (130 gramos de ternera) -->
                 <div class="menu-category">
-                    <h3>CLASSIC BURGERS (130 gramos de ternera)</h3>
+                    <h3 data-lang-key="menu_classic_burgers">CLASSIC BURGERS (130 gramos de ternera)</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/canada-burger.png" alt="Canada Burger" loading="lazy" width="300" height="200">
+                            <img src="images/canada-burger.png" alt="Canada Burger" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Canada</h4>
-                                <p class="price">13.50€</p>
-                                <p class="ingredients">Ingredientes: Hamburguesa de ternera, queso cheddar, lechuga, tomate.</p>
+                                <h4 data-lang-key="menu_canada_burger">Canada</h4>
+                                <p class="price" data-lang-key="price_canada_burger">13.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_canada_burger">Ingredientes: Hamburguesa de ternera, queso cheddar, lechuga, tomate.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/usa-burger.png" alt="USA Burger" loading="lazy" width="300" height="200">
+                            <img src="images/usa-burger.png" alt="USA Burger" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>USA</h4>
-                                <p class="price">13.50€</p>
-                                <p class="ingredients">Ingredientes: Hamburguesa de ternera, queso americano, cebolla caramelizada.</p>
+                                <h4 data-lang-key="menu_usa_burger">USA</h4>
+                                <p class="price" data-lang-key="price_usa_burger">13.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_usa_burger">Ingredientes: Hamburguesa de ternera, queso americano, cebolla caramelizada.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/mexico-burger.png" alt="Mexico Burger" loading="lazy" width="300" height="200">
+                            <img src="images/mexico-burger.png" alt="Mexico Burger" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Mexico</h4>
-                                <p class="price">13.50€</p>
-                                <p class="ingredients">Ingredientes: Hamburguesa de ternera, guacamole, jalapeños, queso pepper jack.</p>
+                                <h4 data-lang-key="menu_mexico_burger">Mexico</h4>
+                                <p class="price" data-lang-key="price_mexico_burger">13.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_mexico_burger">Ingredientes: Hamburguesa de ternera, guacamole, jalapeños, queso pepper jack.</p>
                             </div>
                         </div>
                     </div>
@@ -361,38 +370,38 @@
 
                 <!-- TACOS -->
                 <div class="menu-category">
-                    <h3>TACOS</h3>
+                    <h3 data-lang-key="menu_tacos">TACOS</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="images/pastor-tacos.png" alt="Pastor Tacos" loading="lazy" width="300" height="200">
+                            <img src="images/pastor-tacos.png" alt="Pastor Tacos" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Pastor</h4>
-                                <p class="price">3.50€</p>
-                                <p class="ingredients">Ingredientes: Carne al pastor, piña, cebolla, cilantro.</p>
+                                <h4 data-lang-key="menu_pastor_tacos">Pastor</h4>
+                                <p class="price" data-lang-key="price_pastor_tacos">3.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_pastor_tacos">Ingredientes: Carne al pastor, piña, cebolla, cilantro.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/carnitas-tacos.png" alt="Carnitas Tacos" loading="lazy" width="300" height="200">
+                            <img src="images/carnitas-tacos.png" alt="Carnitas Tacos" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Carnitas</h4>
-                                <p class="price">3.50€</p>
-                                <p class="ingredients">Ingredientes: Carne de cerdo, cebolla, cilantro.</p>
+                                <h4 data-lang-key="menu_carnitas_tacos">Carnitas</h4>
+                                <p class="price" data-lang-key="price_carnitas_tacos">3.50€</p>
+                                <p class="ingredients" data-lang-key="ingredients_carnitas_tacos">Ingredientes: Carne de cerdo, cebolla, cilantro.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/birria-tacos.png" alt="Birria Tacos" loading="lazy" width="300" height="200">
+                            <img src="images/birria-tacos.png" alt="Birria Tacos" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Birria</h4>
-                                <p class="price">4€</p>
-                                <p class="ingredients">Ingredientes: Carne de res marinada, consomé, cebolla, cilantro.</p>
+                                <h4 data-lang-key="menu_birria_tacos">Birria</h4>
+                                <p class="price" data-lang-key="price_birria_tacos">4€</p>
+                                <p class="ingredients" data-lang-key="ingredients_birria_tacos">Ingredientes: Carne de res marinada, consomé, cebolla, cilantro.</p>
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="images/tostada-tacos.png" alt="Tostada Tacos" loading="lazy" width="300" height="200">
+                            <img src="images/tostada-tacos.png" alt="Tostada Tacos" loading="lazy">
                             <div class="menu-item-info">
-                                <h4>Tostada</h4>
-                                <p class="price">4€</p>
-                                <p class="ingredients">Ingredientes: Tostada crujiente, frijoles, carne, lechuga, queso.</p>
+                                <h4 data-lang-key="menu_tostada_tacos">Tostada</h4>
+                                <p class="price" data-lang-key="price_tostada_tacos">4€</p>
+                                <p class="ingredients" data-lang-key="ingredients_tostada_tacos">Ingredientes: Tostada crujiente, frijoles, carne, lechuga, queso.</p>
                             </div>
                         </div>
                     </div>
@@ -403,11 +412,11 @@
         <!-- Horarios de Apertura -->
         <section class="opening-hours" id="hours">
             <div class="container">
-                <h3>Horarios de Apertura</h3>
+                <h3 data-lang-key="opening_hours_heading">Horarios de Apertura</h3>
                 <ul>
-                    <li>Lunes a Miércoles: 13:00 - 00:00</li>
-                    <li>Jueves a Domingo: 13:00 - 01:30</li>
-                    <li>Domingos: 13:00 - 00:00</li>
+                    <li data-lang-key="opening_hours_monday_wednesday">Lunes a Miércoles: 13:00 - 00:00</li>
+                    <li data-lang-key="opening_hours_thursday_sunday">Jueves a Domingo: 13:00 - 01:30</li>
+                    <li data-lang-key="opening_hours_sunday">Domingos: 13:00 - 00:00</li>
                 </ul>
             </div>
         </section>
@@ -415,9 +424,12 @@
         <!-- Información de Contacto -->
         <section class="contact-info" id="contact">
             <div class="container">
-                <h3>Contacto</h3>
-                <p>Av. Antonio Toré Toré 24, 29740 Torre del Mar, Málaga</p>
-                <p><a href="mailto:Bigfoot.TDM@gmail.com">Bigfoot.TDM@gmail.com</a><br>640 79 83 85</p>
+                <h3 data-lang-key="contact_heading">Contacto</h3>
+                <p data-lang-key="contact_address">Av. Antonio Toré Toré 24, 29740 Torre del Mar, Málaga</p>
+                <p>
+                    <a href="mailto:Bigfoot.TDM@gmail.com" data-lang-key="contact_email">Bigfoot.TDM@gmail.com</a><br>
+                    <span data-lang-key="contact_phone">640 79 83 85</span>
+                </p>
             </div>
         </section>
     </main>
@@ -426,11 +438,11 @@
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-logo">
-                <img src="images/BF_logo.png" alt="Bigfoot TDM Logo" loading="lazy" width="120" height="60">
+                <img src="images/BF_logo.png" alt="Bigfoot TDM Logo" loading="lazy">
             </div>
             <div class="footer-social">
-                <img src="images/instagram-icon.png" alt="Ícono de Instagram" loading="lazy" width="24" height="24">
-                <img src="images/tiktok-icon.png" alt="Ícono de TikTok" loading="lazy" width="24" height="24">
+                <img src="images/instagram-icon.png" alt="Ícono de Instagram" loading="lazy">
+                <img src="images/tiktok-icon.png" alt="Ícono de TikTok" loading="lazy">
             </div>
         </div>
     </footer>

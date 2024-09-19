@@ -70,7 +70,8 @@ body {
 }
 
 .logo img {
-    width: 75px;
+    width: 150px;
+    height: 150px;
 }
 
 .nav ul {
@@ -142,6 +143,28 @@ body {
 
 .social img:hover {
     transform: scale(1.2);
+}
+
+/* Selector de Idioma */
+.language-selector {
+    margin-left: 20px;
+}
+
+.language-selector select {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--menu-bg-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.language-selector select:hover,
+.language-selector select:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 /* Hero */
@@ -358,10 +381,12 @@ body {
 }
 
 .menu-item img {
-    width: 100%;
+    width: 80%;
     height: 200px;
     object-fit: cover;
     transition: transform var(--transition-speed);
+    display: block;       /* Convierte la imagen en un elemento de bloque */
+    margin: 0 auto;       /* Centra la imagen horizontalmente */
 }
 
 .menu-item:hover img {
@@ -531,6 +556,12 @@ body {
 }
 
 /* Responsividad */
+@media (max-width: 1024px) {
+    .menu-item {
+        width: calc(50% - 20px); /* Dos elementos por fila en pantallas medianas */
+    }
+}
+
 @media (max-width: 768px) {
     .nav ul {
         flex-direction: column;
@@ -575,7 +606,7 @@ body {
     }
 
     .menu-item {
-        width: 90%;
+        width: 90%; /* Un solo elemento por fila en pantallas pequeñas */
     }
 
     .menu-toggle {
@@ -596,5 +627,10 @@ body {
 
     .about-image {
         max-width: 45%;
+    }
+
+    .language-selector {
+        margin-left: 0;
+        margin-top: 10px;
     }
 }
