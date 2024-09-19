@@ -11,6 +11,8 @@
     --menu-bg-color: #1a1a1a;
     --text-color: #cccccc;
     --shadow-color: rgba(0,0,0,0.5);
+    --header-bg-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para el header */
+    --header-bg-scrolled: rgba(0, 0, 0, 1); /* Fondo sólido para el header al hacer scroll */
 }
 
 /* Reset */
@@ -39,7 +41,7 @@ body {
 
 /* Encabezado */
 .header {
-    background: var(--primary-color);
+    background: var(--header-bg-color);
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -47,12 +49,24 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 5px var(--shadow-color);
     height: var(--header-height);
+    transition: background-color var(--transition-speed);
+}
+
+.header.scrolled {
+    background: var(--header-bg-scrolled);
 }
 
 .header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--header-bg-color);
+    
+    /* Nuevas propiedades para extender el contenedor */
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 20px; /* Ajusta el padding según tus necesidades */
 }
 
 .logo img {
@@ -220,9 +234,21 @@ body {
     transform: translateX(-50%);
 }
 
-.about-us p {
-    max-width: 800px;
-    margin: 0 auto 20px;
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1 1 500px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
     font-size: 1.1rem;
     color: var(--text-color);
     text-align: center;
@@ -231,12 +257,34 @@ body {
     animation: fadeInUp 1s ease forwards;
 }
 
-.about-us p:nth-child(3) {
+.about-text p:nth-child(3) {
     animation-delay: 0.3s;
 }
 
-.about-us p:nth-child(4) {
+.about-text p:nth-child(4) {
     animation-delay: 0.5s;
+}
+
+.about-images {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.about-image:nth-child(2) {
+    animation-delay: 0.3s;
 }
 
 /* Menú */
@@ -540,5 +588,18 @@ body {
         position: absolute;
         top: 20px;
         right: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-images {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about-image {
+        max-width: 45%;
     }
 }

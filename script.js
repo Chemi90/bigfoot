@@ -51,3 +51,13 @@ const sectionObserver = new IntersectionObserver((entries, observer) => {
 sections.forEach(section => {
     sectionObserver.observe(section);
 });
+
+// Cambio de Estilo del Header al Hacer Scroll
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
